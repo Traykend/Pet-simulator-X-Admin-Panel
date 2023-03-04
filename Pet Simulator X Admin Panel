@@ -1,0 +1,21 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Pet simulator X admin", "DarkTheme")
+    -- Adminpanle
+    local Admin = Window:NewTab("Admin")
+    local AdminSection = Admin:NewSection("Admin")
+
+    AdminSection:NewButton("YMS", "Traykend Made This", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+    -- Sections
+local Information = Window:NewTab("Information")
+local InformationSection = Information:NewSection("Information")
+
+InformationSection:NewDropdown("Information", "Traykend Made This", {"Info document",}, function(currentChoice)
+    print(currentChoice)
+end)
+
+InformationSection:NewDropdown("YMS", "Traykend Made This", {"Tiktok", "Youtube", "Discord"}, function(currentChoice)
+    print(currentChoice)
+end)
